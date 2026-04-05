@@ -530,6 +530,7 @@
       <div class="project-card featured">
         <div class="project-badge">⚡ Current Project</div>
         <div class="project-title">AWS Serverless Portfolio Website</div>
+        <div style="display:inline-block;font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#22c55e;border:1px solid #22c55e33;background:#22c55e11;padding:0.2rem 0.7rem;border-radius:999px;margin-bottom:0.8rem;">✓ CI/CD Pipeline Active</div>
         <p class="project-desc">
           A fully cloud-native personal portfolio hosted on AWS. Features a live visitor counter 
           backed by Lambda and DynamoDB, HTTPS delivery via CloudFront, and an automated 
@@ -717,8 +718,8 @@
         <p>Open to internships, cloud projects, and collaborations.</p>
       </div>
       <div class="contact-links">
-        <a href="mailto:aakash285300@gmail.com" class="contact-link">
-          <span>✉️</span> aakash285300@gmail.com
+        <a href="/cdn-cgi/l/email-protection#fa9b9b919b8992c8c2cfc9cacaba9d979b9396d4999597" class="contact-link">
+          <span>✉️</span> <span class="__cf_email__" data-cfemail="ec8d8d878d9f84ded4d9dfdcdcac8b818d8580c28f8381">[email&#160;protected]</span>
         </a>
         <a href="tel:+917305533987" class="contact-link">
           <span>📞</span> +91 73055 33987
@@ -735,11 +736,9 @@
   </footer>
 
   <script>
-    // Visitor counter — will call the real API Gateway URL in Phase 4
-    // Placeholder for now
     async function fetchVisitorCount() {
       try {
-        const API_URL = 'YOUR_API_GATEWAY_URL_HERE';
+        const API_URL = 'https://0blb71s7g0.execute-api.ap-south-1.amazonaws.com/count';
         const res = await fetch(API_URL);
         const data = await res.json();
         document.getElementById('visitor-count').textContent = data.count;
